@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notas</title>
+</head>
+<body>
+    <script>
+        var n1 = prompt("Digite a Altura: ");
+        
+           n1= n1.replace(",",".");
+            n1 = parseFloat(n1);
+
+        var n2 = prompt("Digite o Peso: ");
+           
+            n2= n2.replace(",",".");
+            n2 = parseFloat(n2);
+
+            
+
+        document.write("<b>Altura: </b>"+ n1);
+        document.write("<br>");
+        document.write("<b>Peso: </b>"+ n2);
+        document.write("<br>");
+        
+        
+
+        var imc = n2/(n1*n1) ;
+        imc= parseFloat (imc)
+
+        if( imc >=25){
+            
+            document.write("Você está acima do peso: "+ imc);
+        } else {
+            document.write("Você não está acima do peso: "+ imc);
+        }
+
+        //Receber a altura e o peso de uma pessoa, e calcular o IMC
+        // IMC é calculado por peso/altura*altura
+        // Se a pessoa tuver IMC maior que 25, imprimir, Você está acima do peso
+        // senão, imprimir, Você não está acima do peso.
+
+
+        
+         
+    </script>
+
+    
+</body>
+</html>

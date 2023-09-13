@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head><meta charset="utf-8"></head>
+
+<body>
+
+<script>
+    
+    var pessoa = {
+        nome:"Jerônimo da silva",
+        dataNascimento: "1960-02-21",
+        serie: "7º ano",
+        endereco:"Rua Apache, 123 - Madalena",
+        nomeMae:"Maria da Silva",
+        curso:"Ensino Fundamental",
+        idade:63,
+        peso: 75.6,
+        notas:[9.5,6.8,7.2,4.7,1.5]
+    }
+
+    for(var i = 0; i <= pessoa.notas.lenght-1; i++){
+        document.write ((i+1)+"ª nota: "+pessoa.notas[i]);
+        document.write ("<br>");
+    }
+   
+console.log(pessoa);
+
+</script>
+
+</body>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!-- saved from url=(0054)file:///C:/Users/Harrison%20Souza/Downloads/Notas.html -->
+<html lang="pt-br"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notas</title>
+</head>
+<body>
+    <script>
+        var n1 = prompt("Digite a primeira nota: ");
+        n1 = parseFloat(n1);
+        var n2 = prompt("Digite a segunda nota: ");
+        n2 = parseFloat(n2);
+        var n3 = prompt("Digite a terceira nota: ");
+        n3 = parseFloat(n3);
+
+        document.write("<b>Nota 1: </b>"+ n1);
+        document.write("<br>");
+        document.write("<b>Nota 2: </b>"+ n2);
+        document.write("<br>");
+        document.write("<b>Note 3: </b>"+ n3);
+        document.write("<br>");
+
+        var md = (n1+n2+n3)/3;
+        md = parseFloat(md);
+
+
+        if( md >= 6){
+            
+            document.write("Passou!, Sua nota foi: "+ md);
+        } else {
+            document.write("Reprovou!, Sua nota foi: "+md);
+        }
+         
+    </script><b>Nota 1: </b>6<br><b>Nota 2: </b>6<br><b>Note 3: </b>6<br>Passou!, Sua nota foi: 6
+
+    
+
+</body></html>
